@@ -10,8 +10,8 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
+contentDir = "content/zh"
+defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
@@ -52,27 +52,10 @@ id = "UA-00000000-0"
 # Language configuration
 
 [languages]
-[languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
-contentDir = "content/fa"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
+[languages.zh]
+title = "Docsy中文网"
+description = "Docsy example 中文站点"
+languageName ="Chinese"
 
 [markup]
   [markup.goldmark]
@@ -101,13 +84,13 @@ privacy_policy = "https://policies.google.com/privacy"
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
 
-# Flag used in the "version-banner" partial to decide whether to display a 
+# Flag used in the "version-banner" partial to decide whether to display a
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
 archived_version = false
 
 # The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
+# Used in the "version-banner" partial to display a version number for the
 # current doc set.
 version = "0.0"
 
@@ -163,7 +146,7 @@ yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/i
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
-# If you want this feature, but occasionally need to remove the Reading time from a single page, 
+# If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
 enable = false
@@ -202,3 +185,5 @@ enable = false
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
+[params.katex]
+enable = true
