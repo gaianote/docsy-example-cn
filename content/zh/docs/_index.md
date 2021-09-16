@@ -1,7 +1,7 @@
 
 ---
-title: "Welcome to Docsy"
-linkTitle: "Documentation"
+title: "欢迎来到 Docsy"
+linkTitle: "文档"
 menu:
   main:
     weight: 20

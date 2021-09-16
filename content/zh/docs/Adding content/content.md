@@ -12,7 +12,7 @@ description: >
 
 您在 Hugo 站点项目的 **content root directory** 下为站点添加内容 - `content/` 或 [language-specific](/docs/language/) 根目录，如 `content/en/`。此处的主要例外是您不希望将静态文件内置到您的站点中：您可以在下面的 [添加静态内容](#adding-static-content) 中找到有关在何处添加这些文件的更多信息。您的内容根目录中的文件通常分组在与您网站的部分和模板相对应的子目录中，我们将在 [内容部分和模板](#content-sections-and-templates) 中查看这些子目录。
 
-你可以在【目录结构说明】(https://gohugo.io/getting-started/directory-structure/#directory-structure-explained)中找到更多关于 Hugo 目录结构的信息。
+你可以在[目录结构说明](https://gohugo.io/getting-started/directory-structure/#directory-structure-explained)中找到更多关于 Hugo 目录结构的信息。
 
 ## 内容部分和模板
 
