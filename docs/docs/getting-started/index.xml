@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docsy中文网 – 入门</title>
-    <link>/docs/getting-started/</link>
+    <link>/docsy-example-cn/docs/getting-started/</link>
     <description>Recent content in 入门 on Docsy中文网</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 30 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsy-example-cn/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Docker 快速开始</title>
-      <link>/docs/getting-started/quickstart-docker/</link>
+      <link>/docsy-example-cn/docs/getting-started/quickstart-docker/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/quickstart-docker/</guid>
+      <guid>/docsy-example-cn/docs/getting-started/quickstart-docker/</guid>
       <description>
         
         
@@ -65,9 +65,9 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose rm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;下一步是什么&#34;&gt;下一步是什么？&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;了解 &lt;a href=&#34;/docs/getting-started/&#34;&gt;Docsy 的基本设置和配置&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/adding-content/&#34;&gt;添加内容并自定义您的网站&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/deployment/&#34;&gt;发布您的网站&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;了解 &lt;a href=&#34;/docsy-example-cn/docs/getting-started/&#34;&gt;Docsy 的基本设置和配置&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/&#34;&gt;添加内容并自定义您的网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docsy-example-cn/docs/deployment/&#34;&gt;发布您的网站&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

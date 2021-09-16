@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docsy中文网 – 最佳实践</title>
-    <link>/docs/best-practices/</link>
+    <link>/docsy-example-cn/docs/best-practices/</link>
     <description>Recent content in 最佳实践 on Docsy中文网</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/best-practices/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsy-example-cn/docs/best-practices/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Hugo 内容提示</title>
-      <link>/docs/best-practices/site-guidance/</link>
+      <link>/docsy-example-cn/docs/best-practices/site-guidance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/best-practices/site-guidance/</guid>
+      <guid>/docsy-example-cn/docs/best-practices/site-guidance/</guid>
       <description>
         
         
@@ -34,7 +34,7 @@
 正确呈现一些嵌套列表，而 Blackfriday 可能无法很好地呈现相同的内容。例如，在一个计数
 编号列表可能会重新启动，或者列表中的嵌套内容未缩进
 （显示为对等元素而不是嵌套的子元素）。你可能想在你的贡献指南中推荐
-（&lt;a href=&#34;/docs/contribution-guidelines/#contributing-to-se-docs&#34;&gt;正如我们所做的&lt;/a&gt;），贡献者可以使用 Hugo 预览他们的内容
+（&lt;a href=&#34;/docsy-example-cn/docs/contribution-guidelines/#contributing-to-se-docs&#34;&gt;正如我们所做的&lt;/a&gt;），贡献者可以使用 Hugo 预览他们的内容
 （或者使用 Netlify 的 PR 预览功能，如果这是您选择的部署工具）以确保其内容正确呈现
 与黑色星期五。&lt;/p&gt;
 
@@ -51,18 +51,18 @@
 &lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
 &lt;p&gt;默认情况下，链接中的常规相对 URL 由 Hugo 保持不变（它们仍然是您网站生成的 HTML 中的相对链接），因此一些硬编码的相对链接，如 &lt;code&gt;[relative cross-link](../../peer-folder /sub-file.md)&lt;/code&gt; 的行为与它们在本地文件系统上的工作方式相比可能会出乎意料。您可能会发现使用 Hugo 的一些内置 &lt;a href=&#34;https://gohugo.io/content-management/cross-references/#use-ref-and-relref&#34;&gt;链接短代码&lt;/a&gt; 来避免生成的链接中的断开链接很有帮助地点。例如 Hugo 中的 &lt;code&gt;{{&amp;lt; ref &amp;quot;filename.md&amp;quot; &amp;gt;}}&lt;/code&gt; 链接实际上将
 查找并自动链接到名为“filename.md”的文件。&lt;/p&gt;
-&lt;p&gt;但是请注意，&lt;code&gt;ref&lt;/code&gt; 和&lt;code&gt;relref&lt;/code&gt; 链接不适用于&lt;code&gt;_index&lt;/code&gt; 或&lt;code&gt;index&lt;/code&gt; 文件（例如，此站点的&lt;a href=&#34;/docs/adding-content/&#34;&gt;内容登陆页面&lt;/a&gt;）：您需要使用常规的 Markdown 链接到部分着陆页或其他索引页。指定这些相对于站点根 URL 的链接，例如：&lt;code&gt;/docs/adding-content/&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#working-with-links&#34;&gt;了解有关链接的更多信息&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;但是请注意，&lt;code&gt;ref&lt;/code&gt; 和&lt;code&gt;relref&lt;/code&gt; 链接不适用于&lt;code&gt;_index&lt;/code&gt; 或&lt;code&gt;index&lt;/code&gt; 文件（例如，此站点的&lt;a href=&#34;/docsy-example-cn/docs/adding-content/&#34;&gt;内容登陆页面&lt;/a&gt;）：您需要使用常规的 Markdown 链接到部分着陆页或其他索引页。指定这些相对于站点根 URL 的链接，例如：&lt;code&gt;/docs/adding-content/&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#working-with-links&#34;&gt;了解有关链接的更多信息&lt;/a&gt;。&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: 组织您的内容</title>
-      <link>/docs/best-practices/organizing-content/</link>
+      <link>/docsy-example-cn/docs/best-practices/organizing-content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/best-practices/organizing-content/</guid>
+      <guid>/docsy-example-cn/docs/best-practices/organizing-content/</guid>
       <description>
         
         
@@ -86,11 +86,11 @@
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    如果您想复制本指南，请注意其 &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;源文件&lt;/a&gt; 位于 Docsy 主题存储库中，因此它不会有自己的&lt;code&gt;themes/&lt;/code&gt; 目录：相反，我们运行&lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; 以从其父目录使用Docsy。您可能想要复制站点并&lt;a href=&#34;/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;使用 Docsy 添加&lt;code&gt;themes/&lt;/code&gt; 目录&lt;/a&gt;，或者只是将 &lt;code&gt;docs/&lt;/code&gt; 文件夹复制到您现有站点的内容根目录中。
+    如果您想复制本指南，请注意其 &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;源文件&lt;/a&gt; 位于 Docsy 主题存储库中，因此它不会有自己的&lt;code&gt;themes/&lt;/code&gt; 目录：相反，我们运行&lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; 以从其父目录使用Docsy。您可能想要复制站点并&lt;a href=&#34;/docsy-example-cn/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;使用 Docsy 添加&lt;code&gt;themes/&lt;/code&gt; 目录&lt;/a&gt;，或者只是将 &lt;code&gt;docs/&lt;/code&gt; 文件夹复制到您现有站点的内容根目录中。
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#organizing-your-documentation&#34;&gt;详细了解 Hugo 和 Docsy 如何使用文件夹和其他文件来组织您的网站&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#organizing-your-documentation&#34;&gt;详细了解 Hugo 和 Docsy 如何使用文件夹和其他文件来组织您的网站&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;为什么是这个结构&#34;&gt;为什么是这个结构？&lt;/h2&gt;
 &lt;p&gt;我们基于我们自己创建（和使用）大型文档集的经验来构建示例站点结构
 不同类型的项目和在我们一些较大网站上进行的用户研究。在用户研究中，我们看到

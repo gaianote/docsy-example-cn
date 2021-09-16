@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docsy中文网 – 欢迎来到 Docsy</title>
-    <link>/docs/</link>
+    <link>/docsy-example-cn/docs/</link>
     <description>Recent content in 欢迎来到 Docsy on Docsy中文网</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docsy-example-cn/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,16 +15,16 @@
     
     <item>
       <title>Docs: 添加内容</title>
-      <link>/docs/adding-content/content/</link>
+      <link>/docsy-example-cn/docs/adding-content/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/content/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/content/</guid>
       <description>
         
         
         &lt;p&gt;所以你已经有了一个带有 Docsy 的新 Hugo 网站，现在是时候添加一些内容了！此页面告诉您如何使用主题来添加和构建站点内容。&lt;/p&gt;
 &lt;h2 id=&#34;内容根目录&#34;&gt;内容根目录&lt;/h2&gt;
-&lt;p&gt;您在 Hugo 站点项目的 &lt;strong&gt;content root directory&lt;/strong&gt; 下为站点添加内容 - &lt;code&gt;content/&lt;/code&gt; 或 &lt;a href=&#34;/docs/language/&#34;&gt;language-specific&lt;/a&gt; 根目录，如 &lt;code&gt;content/en/&lt;/code&gt;。此处的主要例外是您不希望将静态文件内置到您的站点中：您可以在下面的 &lt;a href=&#34;#adding-static-content&#34;&gt;添加静态内容&lt;/a&gt; 中找到有关在何处添加这些文件的更多信息。您的内容根目录中的文件通常分组在与您网站的部分和模板相对应的子目录中，我们将在 &lt;a href=&#34;#content-sections-and-templates&#34;&gt;内容部分和模板&lt;/a&gt; 中查看这些子目录。&lt;/p&gt;
+&lt;p&gt;您在 Hugo 站点项目的 &lt;strong&gt;content root directory&lt;/strong&gt; 下为站点添加内容 - &lt;code&gt;content/&lt;/code&gt; 或 &lt;a href=&#34;/docsy-example-cn/docs/language/&#34;&gt;language-specific&lt;/a&gt; 根目录，如 &lt;code&gt;content/en/&lt;/code&gt;。此处的主要例外是您不希望将静态文件内置到您的站点中：您可以在下面的 &lt;a href=&#34;#adding-static-content&#34;&gt;添加静态内容&lt;/a&gt; 中找到有关在何处添加这些文件的更多信息。您的内容根目录中的文件通常分组在与您网站的部分和模板相对应的子目录中，我们将在 &lt;a href=&#34;#content-sections-and-templates&#34;&gt;内容部分和模板&lt;/a&gt; 中查看这些子目录。&lt;/p&gt;
 &lt;p&gt;你可以在&lt;a href=&#34;https://gohugo.io/getting-started/directory-structure/#directory-structure-explained&#34;&gt;目录结构说明&lt;/a&gt;中找到更多关于 Hugo 目录结构的信息。&lt;/p&gt;
 &lt;h2 id=&#34;内容部分和模板&#34;&gt;内容部分和模板&lt;/h2&gt;
 &lt;p&gt;Hugo 使用您提供的内容文件以及您网站主题提供的任何模板来构建您的网站页面。这些模板（或 Hugo 术语中的“布局”*）包括页面的页眉、页脚、导航和样式表链接等内容：基本上，除了页面特定内容之外的所有内容。模板又可以由 &lt;em&gt;partials&lt;/em&gt; 组成：用于页眉、搜索框等页面元素的可重用 HTML 的小片段。&lt;/p&gt;
@@ -34,9 +34,9 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/tree/master/layouts/blog&#34;&gt;&lt;code&gt;blog&lt;/code&gt;&lt;/a&gt; 适用于您网站博客中的页面。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/tree/master/layouts/community&#34;&gt;&lt;code&gt;community&lt;/code&gt;&lt;/a&gt; 适用于您网站的社区页面。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;它还提供了一个&lt;a href=&#34;https://github.com/google/docsy/tree/master/layouts/_default&#34;&gt;默认的“登陆页面”类型的模板&lt;/a&gt; 带有站点页眉和页脚，但没有左导航，你可以用于任何其他部分。在本站点和我们的示例站点中，它用于站点 &lt;a href=&#34;/&#34;&gt;主页&lt;/a&gt; 和 &lt;a href=&#34;/about/&#34;&gt;关于&lt;/a&gt; 页面。&lt;/p&gt;
+&lt;p&gt;它还提供了一个&lt;a href=&#34;https://github.com/google/docsy/tree/master/layouts/_default&#34;&gt;默认的“登陆页面”类型的模板&lt;/a&gt; 带有站点页眉和页脚，但没有左导航，你可以用于任何其他部分。在本站点和我们的示例站点中，它用于站点 &lt;a href=&#34;/docsy-example-cn/&#34;&gt;主页&lt;/a&gt; 和 &lt;a href=&#34;/docsy-example-cn/about/&#34;&gt;关于&lt;/a&gt; 页面。&lt;/p&gt;
 &lt;p&gt;您站点中的每个顶级 &lt;strong&gt;section&lt;/strong&gt; 都对应于站点内容根目录中的一个 &lt;strong&gt;directory&lt;/strong&gt;。 Hugo 会自动为该部分应用适当的 &lt;strong&gt;template&lt;/strong&gt;，具体取决于内容所在的文件夹。例如，此页面位于站点内容根目录 &lt;code&gt;content/en/&lt;/code&gt; 的 &lt;code&gt;docs&lt;/code&gt; 子目录中，因此 Hugo自动应用&lt;code&gt;docs&lt;/code&gt; 模板。您可以通过为特定页面显式指定模板或内容类型来覆盖它。&lt;/p&gt;
-&lt;p&gt;如果您复制了示例站点，则您已经为使用 Docsy 的模板适当命名了顶级部分目录，每个目录都有一个索引页面（&lt;code&gt;_index.md&lt;/code&gt; 或 &lt;code&gt;index.html&lt;/code&gt;）页面供用户登陆。这些顶级部分也出现在示例网站的 &lt;a href=&#34;/docs/adding-content/navigation/#top-level-menu&#34;&gt;顶级菜单&lt;/a&gt; 中。&lt;/p&gt;
+&lt;p&gt;如果您复制了示例站点，则您已经为使用 Docsy 的模板适当命名了顶级部分目录，每个目录都有一个索引页面（&lt;code&gt;_index.md&lt;/code&gt; 或 &lt;code&gt;index.html&lt;/code&gt;）页面供用户登陆。这些顶级部分也出现在示例网站的 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/navigation/#top-level-menu&#34;&gt;顶级菜单&lt;/a&gt; 中。&lt;/p&gt;
 &lt;h3 id=&#34;自定义部分&#34;&gt;自定义部分&lt;/h3&gt;
 &lt;p&gt;如果您复制了示例站点并且&lt;em&gt;不想&lt;/em&gt;使用提供的内容部分之一，只需删除相应的内容子目录。同样，如果您想添加顶级部分，只需添加一个新的子目录，但您需要在每个页面的 &lt;a href=&#34;#page-frontmatter&#34;&gt;frontmatter&lt;/a&gt; 中明确指定布局或内容类型，如果您想使用除默认模板之外的任何现有 Docsy 模板。例如，如果您创建一个新目录 &lt;code&gt;content/en/amazing&lt;/code&gt; 并希望该自定义部分中的一个或多个页面使用 Docsy 的 &lt;code&gt;docs&lt;/code&gt; 模板，则将 &lt;code&gt;type: docs&lt;/code&gt; 添加到每个页面的前端：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -88,7 +88,7 @@
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Add different types of content to your Docsy site.&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;您需要提供的最低要求是标题：其他一切都取决于您！但是，如果您省略了页面权重，您的 &lt;a href=&#34;/docs/adding-content/navigation&#34;&gt;navigation&lt;/a&gt; 可能会变得有点混乱。您可能还想包含 &lt;code&gt;description&lt;/code&gt;，因为 Docsy 使用它来生成搜索引擎使用的元 &lt;code&gt;description&lt;/code&gt; 标签。有关详细信息，请参阅 &lt;a href=&#34;/docs/adding-content/feedback/#search-engine-optimization-meta-tags&#34;&gt;搜索引擎优化 (SEO) 元标记&lt;/a&gt;。&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;您需要提供的最低要求是标题：其他一切都取决于您！但是，如果您省略了页面权重，您的 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/navigation&#34;&gt;navigation&lt;/a&gt; 可能会变得有点混乱。您可能还想包含 &lt;code&gt;description&lt;/code&gt;，因为 Docsy 使用它来生成搜索引擎使用的元 &lt;code&gt;description&lt;/code&gt; 标签。有关详细信息，请参阅 &lt;a href=&#34;/docsy-example-cn/docsy-example-cn/docs/adding-content/feedback/#search-engine-optimization-meta-tags&#34;&gt;搜索引擎优化 (SEO) 元标记&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;页面内容和标记&#34;&gt;页面内容和标记&lt;/h2&gt;
 &lt;p&gt;默认情况下，您在 Docsy 站点中创建页面作为简单的 &lt;a href=&#34;https://gohugo.io/content-management/formats/&#34;&gt;Markdown 或 HTML 文件&lt;/a&gt; 和 &lt;a href=&#34;#page-frontmatter&#34;&gt;page frontmatter&lt;/a&gt;，如上所述。 0.60 之前的 Hugo 版本使用 &lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;BlackFriday&lt;/a&gt; 作为其 Markdown 解析器。从 0.60 开始，Hugo 默认使用 &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;Goldmark&lt;/a&gt; 作为 Markdown 解析器。&lt;/p&gt;
 
@@ -106,14 +106,14 @@
 
 &lt;/div&gt;
 
-&lt;p&gt;除了标记文本之外，您还可以使用 Hugo 和 Docsy 的 &lt;a href=&#34;/docs/adding-content/shortcodes&#34;&gt;shortcodes&lt;/a&gt;：可重用的 HTML 块，可用于快速构建页面。在 &lt;a href=&#34;/docs/adding-content/shortcodes&#34;&gt;Docsy Shortcodes&lt;/a&gt; 中了解有关短代码的更多信息。&lt;/p&gt;
+&lt;p&gt;除了标记文本之外，您还可以使用 Hugo 和 Docsy 的 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes&#34;&gt;shortcodes&lt;/a&gt;：可重用的 HTML 块，可用于快速构建页面。在 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes&#34;&gt;Docsy Shortcodes&lt;/a&gt; 中了解有关短代码的更多信息。&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
     &lt;p&gt;Hugo 还支持使用 &lt;a href=&#34;https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers&#34;&gt;external parser as helpers&lt;/a&gt; 使用其他标记添加内容。例如，您可以使用 &lt;code&gt;rst2html&lt;/code&gt; 作为外部解析器在 RST 中添加内容（但请注意，这并不支持所有类型的 RST，例如 Sphinx RST）。同样，您可以使用 &lt;code&gt;asciidoctor&lt;/code&gt; 解析 Asciidoc 文件，或使用 &lt;code&gt;pandoc&lt;/code&gt; 解析其他格式。&lt;/p&gt;
-&lt;p&gt;外部解析器可能不适用于所有部署选项，因为您需要安装外部解析器并自己运行 Hugo 来生成您的站点（例如，您将无法使用 &lt;a href=&#34;/docs/deployment/#deployment-with-netlify&#34;&gt;Netlify 的持续部署功能&lt;/a&gt;)。此外，添加外部解析器可能会导致构建更大站点的性能问题。&lt;/p&gt;
+&lt;p&gt;外部解析器可能不适用于所有部署选项，因为您需要安装外部解析器并自己运行 Hugo 来生成您的站点（例如，您将无法使用 &lt;a href=&#34;/docsy-example-cn/docs/deployment/#deployment-with-netlify&#34;&gt;Netlify 的持续部署功能&lt;/a&gt;)。此外，添加外部解析器可能会导致构建更大站点的性能问题。&lt;/p&gt;
 
 
 &lt;/div&gt;
@@ -121,12 +121,12 @@
 &lt;h3 id=&#34;使用链接&#34;&gt;使用链接&lt;/h3&gt;
 &lt;p&gt;Hugo 允许您使用正常的 Markdown 语法指定链接，但请记住，您需要指定相对于站点根 URL 的链接，并且 Hugo 在站点生成的 HTML 中保持相对 URL 不变。&lt;/p&gt;
 &lt;p&gt;或者，您可以使用 Hugo 的帮助程序 &lt;a href=&#34;https://gohugo.io/content-management/cross-references/&#34;&gt;&lt;code&gt;ref&lt;/code&gt; 和 &lt;code&gt;relref&lt;/code&gt; 短代码&lt;/a&gt; 来创建解析为正确 URL 的内部链接。但是，请注意，这意味着如果用户在您生成的站点之外查看您的页面，您的链接将根本不会显示为链接，例如使用 GitHub 的 Web UI 中呈现的 Markdown 功能。&lt;/p&gt;
-&lt;p&gt;您可以在 &lt;a href=&#34;/docs/best-practices/site-guides&#34;&gt;Hugo Tips&lt;/a&gt; 中找到（或添加！）使用 Hugo 链接的技巧和陷阱。&lt;/p&gt;
+&lt;p&gt;您可以在 &lt;a href=&#34;/docsy-example-cn/docs/best-practices/site-guides&#34;&gt;Hugo Tips&lt;/a&gt; 中找到（或添加！）使用 Hugo 链接的技巧和陷阱。&lt;/p&gt;
 &lt;h3 id=&#34;内容样式&#34;&gt;内容样式&lt;/h3&gt;
 &lt;p&gt;我们不要求您的页面内容具有任何特定的样式。但是，如果您需要有关如何编写和格式化清晰、简洁的技术文档的指导，我们建议您阅读 &lt;a href=&#34;https://developers.google.com/style/&#34;&gt;Google 开发者文档样式指南&lt;/a&gt;，尤其是 &lt;a href=&#34;https://developers.google.com/style/highlights&#34;&gt;样式指南亮点&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;页面包&#34;&gt;页面包&lt;/h2&gt;
 &lt;p&gt;您可以将站点页面创建为其部分或子部分目录中的独立文件，或者创建为内容位于文件夹索引页中的文件夹。为您的页面创建一个文件夹可以让您&lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;捆绑&lt;/a&gt; 图像和其他资源以及内容。&lt;/p&gt;
-&lt;p&gt;您可以在此站点和我们的示例站点中查看这两种方法的示例。例如，此页面的源只是一个独立文件 &lt;code&gt;/content/en/docs/adding-content.md&lt;/code&gt;。然而，本网站中 &lt;a href=&#34;/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt; 的源代码位于&lt;code&gt;/content/en/docs/adding-content/shortcodes/index.md&lt;/code&gt;，其图像资源由页面在同一个 &lt;code&gt;/shortcodes/&lt;/code&gt; 目录中。在 Hugo 术语中，这被称为 &lt;em&gt;leaf bundle&lt;/em&gt;，因为它是一个包含单个站点页面的所有数据的文件夹，没有任何子页面（并且使用不带下划线的 &lt;code&gt;index.md&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;您可以在此站点和我们的示例站点中查看这两种方法的示例。例如，此页面的源只是一个独立文件 &lt;code&gt;/content/en/docs/adding-content.md&lt;/code&gt;。然而，本网站中 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt; 的源代码位于&lt;code&gt;/content/en/docs/adding-content/shortcodes/index.md&lt;/code&gt;，其图像资源由页面在同一个 &lt;code&gt;/shortcodes/&lt;/code&gt; 目录中。在 Hugo 术语中，这被称为 &lt;em&gt;leaf bundle&lt;/em&gt;，因为它是一个包含单个站点页面的所有数据的文件夹，没有任何子页面（并且使用不带下划线的 &lt;code&gt;index.md&lt;/code&gt;）。&lt;/p&gt;
 &lt;p&gt;您可以在 &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundles&lt;/a&gt; 中找到更多关于使用 Hugo bundles 管理资源的信息。&lt;/p&gt;
 &lt;h2 id=&#34;添加文档和博客文章&#34;&gt;添加文档和博客文章&lt;/h2&gt;
 &lt;p&gt;您可能最常使用的模板是 &lt;a href=&#34;https://github.com/google/docsy/blob/master/layouts/docs/baseof.html&#34;&gt;&lt;code&gt;docs&lt;/code&gt; 模板&lt;/a&gt;（在本页中使用）或非常相似的 &lt;a href=&#34;https://github.com/google/docsy/blob/master/layouts/blog/baseof.html&#34;&gt;&lt;code&gt;blog&lt;/code&gt; 模板&lt;/a&gt;。这两个模板都包括：&lt;/p&gt;
@@ -135,14 +135,14 @@
 &lt;li&gt;GitHub 链接（根据您的站点配置填充）供读者编辑页面或创建问题&lt;/li&gt;
 &lt;li&gt;一个页面菜单&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;以及所有站点页面使用的通用页眉和页脚。应用哪个模板取决于您是否已将内容添加到 &lt;code&gt;blog&lt;/code&gt; 或 &lt;code&gt;docs&lt;/code&gt; 内容目录。您可以在 &lt;a href=&#34;/docs/adding-content/navigation/&#34;&gt;导航和搜索&lt;/a&gt; 中找到有关如何创建导航和页面菜单的更多信息。&lt;/p&gt;
+&lt;p&gt;以及所有站点页面使用的通用页眉和页脚。应用哪个模板取决于您是否已将内容添加到 &lt;code&gt;blog&lt;/code&gt; 或 &lt;code&gt;docs&lt;/code&gt; 内容目录。您可以在 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/navigation/&#34;&gt;导航和搜索&lt;/a&gt; 中找到有关如何创建导航和页面菜单的更多信息。&lt;/p&gt;
 &lt;h3 id=&#34;组织您的文档&#34;&gt;组织您的文档&lt;/h3&gt;
 &lt;p&gt;虽然 Docsy 的顶级部分允许您为不同类型的内容创建站点部分，但您可能还希望在您的“文档”部分中组织您的文档内容。例如，本站的&lt;code&gt;docs&lt;/code&gt;部分目录下有多个子目录，分别是&lt;strong&gt;Getting Started&lt;/strong&gt;、&lt;strong&gt;Content and Customization&lt;/strong&gt;等。每个子目录都有一个 &lt;code&gt;_index.md&lt;/code&gt;（它也可以是一个 &lt;code&gt;_index.html&lt;/code&gt;），它充当一个部分索引页面并告诉 Hugo 相关目录是你的文档的一个子部分。&lt;/p&gt;
 &lt;p&gt;Docsy 的 &lt;code&gt;docs&lt;/code&gt; 布局为您提供了一个左侧导航窗格，其中包含一个基于您的 &lt;code&gt;docs&lt;/code&gt; 文件结构自动生成的嵌套菜单。 &lt;code&gt;docs/&lt;/code&gt; 目录中的每个独立页面或小节 &lt;code&gt;_index.md&lt;/code&gt; 或 &lt;code&gt;_index.html&lt;/code&gt; 页面都会获得一个顶级菜单项，使用来自页面或索引的链接名称和 &lt;code&gt;weight&lt;/code&gt; 元数据。&lt;/p&gt;
-&lt;p&gt;要将文档添加到小节，只需将您的页面文件添加到相关子目录。除了小节索引页面之外，您添加到小节的任何页面都将出现在子菜单中（向左看可以看到一个正在运行的页面！），再次按页面“权重”排序。在 &lt;a href=&#34;/docs/adding-content/navigation/&#34;&gt;导航和搜索&lt;/a&gt; 中了解有关添加 Docsy 导航元数据的更多信息&lt;/p&gt;
-&lt;p&gt;如果您复制了示例站点，那么您的 &lt;code&gt;docs&lt;/code&gt; 目录中已经有一些建议的子目录，以及有关将哪些类型的内容放入其中的指南以及一些示例 Markdown 页面。您可以在 &lt;a href=&#34;/docs/best-practices/organizing-content/&#34;&gt;Organizing Your Content&lt;/a&gt; 中找到有关使用 Docsy 组织内容的更多信息。&lt;/p&gt;
+&lt;p&gt;要将文档添加到小节，只需将您的页面文件添加到相关子目录。除了小节索引页面之外，您添加到小节的任何页面都将出现在子菜单中（向左看可以看到一个正在运行的页面！），再次按页面“权重”排序。在 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/navigation/&#34;&gt;导航和搜索&lt;/a&gt; 中了解有关添加 Docsy 导航元数据的更多信息&lt;/p&gt;
+&lt;p&gt;如果您复制了示例站点，那么您的 &lt;code&gt;docs&lt;/code&gt; 目录中已经有一些建议的子目录，以及有关将哪些类型的内容放入其中的指南以及一些示例 Markdown 页面。您可以在 &lt;a href=&#34;/docsy-example-cn/docs/best-practices/organizing-content/&#34;&gt;Organizing Your Content&lt;/a&gt; 中找到有关使用 Docsy 组织内容的更多信息。&lt;/p&gt;
 &lt;h4 id=&#34;文档部分登录页面&#34;&gt;文档部分登录页面&lt;/h4&gt;
-&lt;p&gt;默认情况下，文档部分登录页面（部分目录中的“_index.md”或“_index.html”）使用一种布局，该布局将链接的格式化列表添加到该部分中的页面，以及它们的前端描述。本网站中的&lt;a href=&#34;/docs/adding-content/&#34;&gt;内容和自定义&lt;/a&gt; 登录页面就是一个很好的例子。&lt;/p&gt;
+&lt;p&gt;默认情况下，文档部分登录页面（部分目录中的“_index.md”或“_index.html”）使用一种布局，该布局将链接的格式化列表添加到该部分中的页面，以及它们的前端描述。本网站中的&lt;a href=&#34;/docsy-example-cn/docs/adding-content/&#34;&gt;内容和自定义&lt;/a&gt; 登录页面就是一个很好的例子。&lt;/p&gt;
 &lt;p&gt;要显示指向该部分页面的简单项目符号列表，请在登录页面的 frontmatter 中指定 &lt;code&gt;simple_list: true&lt;/code&gt;：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
 title: &amp;quot;Simple List Page&amp;quot;
@@ -180,11 +180,11 @@ resources:
 &lt;h2 id=&#34;使用顶级登录页面&#34;&gt;使用顶级登录页面。&lt;/h2&gt;
 &lt;p&gt;Docsy 的&lt;a href=&#34;https://github.com/google/docsy/blob/master/layouts/docs/baseof.html&#34;&gt;默认页面模板&lt;/a&gt; 没有左导航，对于为您的网站创建主页或其他“登陆&amp;quot; 类型页面。&lt;/p&gt;
 &lt;h3 id=&#34;自定义示例站点页面&#34;&gt;自定义示例站点页面&lt;/h3&gt;
-&lt;p&gt;如果您复制了示例站点，则在&lt;code&gt;content/en/_index.html&lt;/code&gt; 中已经有一个简单的站点登录页面。这是由 Docsy 提供的 Hugo 短代码 &lt;a href=&#34;/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt; 组成的。&lt;/p&gt;
-&lt;p&gt;要自定义位于 &lt;a href=&#34;/docs/adding-content/shortcodes/#blockscover&#34;&gt;cover&lt;/a&gt; 块中的大型着陆图像，请将项目中的 &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt; 文件替换为您自己的图像（只要文件名中包含“背景”，就可以随意称呼它）。您可以根据需要删除或添加任意数量的块，以及添加您自己的自定义内容。&lt;/p&gt;
-&lt;p&gt;示例站点在 &lt;code&gt;content/en/about/_index.html&lt;/code&gt; 中还有一个关于页面，使用相同的 Docsy 模板。同样，这是由 &lt;a href=&#34;/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt; 组成，包括在 &lt;code&gt;content/en/about/featured-background.jpg&lt;/code&gt; 中的另一个背景图像。与站点登录页面一样，您可以替换图像、删除或添加块，或者只添加您自己的内容。&lt;/p&gt;
+&lt;p&gt;如果您复制了示例站点，则在&lt;code&gt;content/en/_index.html&lt;/code&gt; 中已经有一个简单的站点登录页面。这是由 Docsy 提供的 Hugo 短代码 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt; 组成的。&lt;/p&gt;
+&lt;p&gt;要自定义位于 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#blockscover&#34;&gt;cover&lt;/a&gt; 块中的大型着陆图像，请将项目中的 &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt; 文件替换为您自己的图像（只要文件名中包含“背景”，就可以随意称呼它）。您可以根据需要删除或添加任意数量的块，以及添加您自己的自定义内容。&lt;/p&gt;
+&lt;p&gt;示例站点在 &lt;code&gt;content/en/about/_index.html&lt;/code&gt; 中还有一个关于页面，使用相同的 Docsy 模板。同样，这是由 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt; 组成，包括在 &lt;code&gt;content/en/about/featured-background.jpg&lt;/code&gt; 中的另一个背景图像。与站点登录页面一样，您可以替换图像、删除或添加块，或者只添加您自己的内容。&lt;/p&gt;
 &lt;h3 id=&#34;构建您自己的登陆页面&#34;&gt;构建您自己的登陆页面&lt;/h3&gt;
-&lt;p&gt;如果您刚刚使用该主题，您仍然可以使用 Docsy 提供的所有 &lt;a href=&#34;/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt;（或您想要的任何其他内容）来构建您自己的登录页面相同的文件位置。&lt;/p&gt;
+&lt;p&gt;如果您刚刚使用该主题，您仍然可以使用 Docsy 提供的所有 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;页面块&lt;/a&gt;（或您想要的任何其他内容）来构建您自己的登录页面相同的文件位置。&lt;/p&gt;
 &lt;h2 id=&#34;添加社区页面&#34;&gt;添加社区页面&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;community&lt;/code&gt; 登录页面模板具有自动填充项目名称和在 &lt;code&gt;config.toml&lt;/code&gt; 中指定的社区链接的样板内容，为您的用户提供资源的快速链接，帮助他们参与您的项目。默认情况下，相同的链接也会添加到您的站点页脚。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;params&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;links&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
@@ -235,7 +235,7 @@ resources:
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
-    &lt;p&gt;如果您在 &lt;code&gt;config.toml&lt;/code&gt; 中启用了我们的 &lt;a href=&#34;/docs/adding-content/print/&#34;&gt;打印功能&lt;/a&gt; 或其他指定的节级输出格式，请确保将 &lt;code&gt;&amp;quot;RSS&amp;quot;&lt;/code&gt; 列为输出格式， 否则，您将无法获得部分级别的 RSS 提要（并且您的博客部分将无法获得漂亮的橙色 RSS 按钮）。 你的 &lt;code&gt;config.toml&lt;/code&gt; 规范覆盖了 Hugo 默认的 &lt;a href=&#34;https://gohugo.io/templates/output-formats/&#34;&gt;输出格式&lt;/a&gt; 部分，即 HTML 和 RSS。&lt;/p&gt;
+    &lt;p&gt;如果您在 &lt;code&gt;config.toml&lt;/code&gt; 中启用了我们的 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/print/&#34;&gt;打印功能&lt;/a&gt; 或其他指定的节级输出格式，请确保将 &lt;code&gt;&amp;quot;RSS&amp;quot;&lt;/code&gt; 列为输出格式， 否则，您将无法获得部分级别的 RSS 提要（并且您的博客部分将无法获得漂亮的橙色 RSS 按钮）。 你的 &lt;code&gt;config.toml&lt;/code&gt; 规范覆盖了 Hugo 默认的 &lt;a href=&#34;https://gohugo.io/templates/output-formats/&#34;&gt;输出格式&lt;/a&gt; 部分，即 HTML 和 RSS。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;outputs&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;HTML&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;RSS&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;print&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -243,7 +243,7 @@ resources:
 &lt;/div&gt;
 
 &lt;h2 id=&#34;站点地图&#34;&gt;站点地图&lt;/h2&gt;
-&lt;p&gt;默认情况下，Hugo 会为您生成的站点创建一个 &lt;code&gt;sitemap.xml&lt;/code&gt; 文件：例如，&lt;a href=&#34;/sitemap.xml&#34;&gt;这里是站点地图&lt;/a&gt; 用于此站点。&lt;/p&gt;
+&lt;p&gt;默认情况下，Hugo 会为您生成的站点创建一个 &lt;code&gt;sitemap.xml&lt;/code&gt; 文件：例如，&lt;a href=&#34;/docsy-example-cn/sitemap.xml&#34;&gt;这里是站点地图&lt;/a&gt; 用于此站点。&lt;/p&gt;
 &lt;p&gt;您可以在“config.toml”中配置站点地图的更新频率、站点地图文件名和默认页面优先级：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;sitemap&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;changefreq&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;monthly&amp;#34;&lt;/span&gt;
@@ -266,10 +266,10 @@ resources:
     
     <item>
       <title>Docs: 外观和感觉</title>
-      <link>/docs/adding-content/lookandfeel/</link>
+      <link>/docsy-example-cn/docs/adding-content/lookandfeel/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/lookandfeel/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/lookandfeel/</guid>
       <description>
         
         
@@ -309,7 +309,7 @@ resources:
 &lt;li&gt;&lt;code&gt;.-bg-&amp;lt;color&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;.-text-&amp;lt;color&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;例如，当您不知道“主要”颜色是深还是浅时，您可以使用这些类以适当的颜色设置文本样式，以确保适当的颜色对比度。 当您将颜色代码作为 &lt;a href=&#34;/docs/adding-content/shortcodes/&#34;&gt;shortcode&lt;/a&gt; 参数接收时，它们也很有用。&lt;/p&gt;
+&lt;p&gt;例如，当您不知道“主要”颜色是深还是浅时，您可以使用这些类以适当的颜色设置文本样式，以确保适当的颜色对比度。 当您将颜色代码作为 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/&#34;&gt;shortcode&lt;/a&gt; 参数接收时，它们也很有用。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;color&amp;gt;&lt;/code&gt; 的值可以是任何颜色名称，&lt;code&gt;primary&lt;/code&gt;、&lt;code&gt;white&lt;/code&gt;、&lt;code&gt;dark&lt;/code&gt;、&lt;code&gt;warning&lt;/code&gt;、&lt;code&gt;light&lt;/code&gt;、&lt;code&gt;success&lt;/code&gt;、&lt;code&gt;300&lt;/code&gt;、&lt;code&gt;blue&lt;/code&gt;、&lt;code&gt;orange &lt;/code&gt;等。&lt;/p&gt;
 &lt;p&gt;当你使用 &lt;code&gt;.-bg-&amp;lt;color&amp;gt;&lt;/code&gt; 时，文本颜色将被调整以获得适当的对比度：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;-bg-primary p-3 display-4&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;Background: Primary&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -623,10 +623,10 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
     
     <item>
       <title>Docs: Docker 快速开始</title>
-      <link>/docs/getting-started/quickstart-docker/</link>
+      <link>/docsy-example-cn/docs/getting-started/quickstart-docker/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/quickstart-docker/</guid>
+      <guid>/docsy-example-cn/docs/getting-started/quickstart-docker/</guid>
       <description>
         
         
@@ -672,9 +672,9 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose rm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;下一步是什么&#34;&gt;下一步是什么？&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;了解 &lt;a href=&#34;/docs/getting-started/&#34;&gt;Docsy 的基本设置和配置&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/adding-content/&#34;&gt;添加内容并自定义您的网站&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/deployment/&#34;&gt;发布您的网站&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;了解 &lt;a href=&#34;/docsy-example-cn/docs/getting-started/&#34;&gt;Docsy 的基本设置和配置&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/&#34;&gt;添加内容并自定义您的网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docsy-example-cn/docs/deployment/&#34;&gt;发布您的网站&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -682,10 +682,10 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
     
     <item>
       <title>Docs: 导航和搜索</title>
-      <link>/docs/adding-content/navigation/</link>
+      <link>/docsy-example-cn/docs/adding-content/navigation/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/navigation/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/navigation/</guid>
       <description>
         
         
@@ -719,10 +719,10 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
 &lt;p&gt;如果你在 &lt;code&gt;config.toml&lt;/code&gt; 中添加了一些 &lt;code&gt;[params.versions]&lt;/code&gt;，Docsy 主题会添加一个
 版本选择器下拉到顶级菜单。&lt;/p&gt;
 &lt;p&gt;您可以在指南中找到更多信息
-&lt;a href=&#34;/docs/adding-content/versioning/&#34;&gt;版本控制您的文档&lt;/a&gt;。&lt;/p&gt;
+&lt;a href=&#34;/docsy-example-cn/docs/adding-content/versioning/&#34;&gt;版本控制您的文档&lt;/a&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;添加语言下拉菜单&#34;&gt;添加语言下拉菜单&lt;/h3&gt;
 &lt;p&gt;如果你在 &lt;code&gt;config.toml&lt;/code&gt; 中配置了不止一种语言，Docsy 主题会在顶级菜单中添加一个语言选择器下拉菜单。选择一种语言会将用户带到当前页面的翻译版本或给定语言的主页。&lt;/p&gt;
-&lt;p&gt;您可以在 &lt;a href=&#34;/docs/language/&#34;&gt;多语言支持&lt;/a&gt; 中找到更多信息。&lt;/p&gt;
+&lt;p&gt;您可以在 &lt;a href=&#34;/docsy-example-cn/docs/language/&#34;&gt;多语言支持&lt;/a&gt; 中找到更多信息。&lt;/p&gt;
 &lt;h2 id=&#34;部分菜单&#34;&gt;部分菜单&lt;/h2&gt;
 &lt;p&gt;“文档”部分左侧显示的部分菜单是根据“内容”树自动构建的。与顶级菜单一样，它按页面或部分索引“权重”（如果未设置“权重”，则按页面创建“日期”排序），与页面或索引的“标题”或“链接标题”（如果不同） , 作为它在菜单中的链接标题。如果部分子文件夹包含除 &lt;code&gt;_index.md&lt;/code&gt; 或 &lt;code&gt;_index.html&lt;/code&gt; 之外的页面，这些页面将显示为子菜单，再次按 &lt;code&gt;weight&lt;/code&gt; 排序。例如，下面是这个页面的元数据，显示了它的 &lt;code&gt;weight&lt;/code&gt; 和 &lt;code&gt;title&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -734,7 +734,7 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Customize site navigation and search for your Docsy site.&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;要从左侧导航菜单隐藏页面或部分，请在前面设置 &lt;code&gt;toc_hide: true&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;要在 &lt;a href=&#34;/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;文档部分登录页面&lt;/a&gt; 上的部分摘要中隐藏页面，请在前面设置 &lt;code&gt;hide_summary: true&lt;/code&gt;。 如果您想同时从目录菜单和部分摘要列表中隐藏页面，则需要在前面的内容中将 &lt;code&gt;toc_hide&lt;/code&gt; 和 &lt;code&gt;hide_summary&lt;/code&gt; 都设置为 &lt;code&gt;true&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;要在 &lt;a href=&#34;/docsy-example-cn/docsy-example-cn/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;文档部分登录页面&lt;/a&gt; 上的部分摘要中隐藏页面，请在前面设置 &lt;code&gt;hide_summary: true&lt;/code&gt;。 如果您想同时从目录菜单和部分摘要列表中隐藏页面，则需要在前面的内容中将 &lt;code&gt;toc_hide&lt;/code&gt; 和 &lt;code&gt;hide_summary&lt;/code&gt; 都设置为 &lt;code&gt;true&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;My Hidden Page&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;weight&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;99&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -780,7 +780,7 @@ svg_image_url = &amp;quot;https://www.plantuml.com/plantuml/svg/&amp;quot;
 &lt;p&gt;默认情况下，搜索框同时出现在顶部导航栏和侧边栏左侧导航窗格的顶部。如果你不想要侧边栏搜索框，在 &lt;code&gt;config.toml&lt;/code&gt; 中将 &lt;code&gt;sidebar_search_disable&lt;/code&gt; 设置为 &lt;code&gt;true&lt;/code&gt;：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sidebar_search_disable = true
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;使用-google-自定义搜索引擎配置搜索&#34;&gt;使用 Google 自定义搜索引擎配置搜索&lt;/h2&gt;
-&lt;p&gt;默认情况下，Docsy 使用 &lt;a href=&#34;https://cse.google.com/cse/all&#34;&gt;Google 自定义搜索引擎&lt;/a&gt; (GCSE) 来搜索您的网站。要启用此功能，您首先需要确保已构建并部署了&lt;a href=&#34;/docs/deployment#build-environments-and-indexing&#34;&gt;站点的生产版本&lt;/a&gt;，否则您的站点将无法抓取并编入索引。&lt;/p&gt;
+&lt;p&gt;默认情况下，Docsy 使用 &lt;a href=&#34;https://cse.google.com/cse/all&#34;&gt;Google 自定义搜索引擎&lt;/a&gt; (GCSE) 来搜索您的网站。要启用此功能，您首先需要确保已构建并部署了&lt;a href=&#34;/docsy-example-cn/docs/deployment#build-environments-and-indexing&#34;&gt;站点的生产版本&lt;/a&gt;，否则您的站点将无法抓取并编入索引。&lt;/p&gt;
 &lt;h3 id=&#34;设置站点搜索&#34;&gt;设置站点搜索&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -840,7 +840,7 @@ algolia_docsearch = true
 &lt;p&gt;禁用&lt;code&gt;config.toml&lt;/code&gt; 中的侧边栏搜索，因为 Algolia DocSearch 目前不支持。请参阅&lt;a href=&#34;#disabling-the-sidebar-search-box&#34;&gt;禁用侧边栏搜索框&lt;/a&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;将 Algolia 提供给您的 JavaScript 代码添加到您网站上每个页面的头部和正文中。有关详细信息，请参阅&lt;a href=&#34;/docs/adding-content/lookandfeel/#add-code-to-head-or-before-body-end&#34;&gt;将代码添加到头部或正文结束之前&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;将 Algolia 提供给您的 JavaScript 代码添加到您网站上每个页面的头部和正文中。有关详细信息，请参阅&lt;a href=&#34;/docsy-example-cn/docs/adding-content/lookandfeel/#add-code-to-head-or-before-body-end&#34;&gt;将代码添加到头部或正文结束之前&lt;/a&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;使用适当的 CSS 选择器更新主体端 Javascript 中的 &lt;code&gt;inputSelector&lt;/code&gt; 字段（例如，&lt;code&gt;.td-search-input&lt;/code&gt; 以使用该主题的默认 CSS）。&lt;/p&gt;
@@ -866,7 +866,7 @@ offlineSearch = true
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    如果您正在 &lt;a href=&#34;/docs/deployment/#serving-your-site-locally&#34;&gt;本地测试&lt;/a&gt; 使用 Hugo 的本地服务器功能，您需要首先通过运行构建您的 &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; 文件 &lt;code&gt;雨果&lt;/code&gt;。 如果你在构建 &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; 时运行 Hugo 服务器，你可能需要停止服务器并重新启动它才能看到你的搜索结果。
+    如果您正在 &lt;a href=&#34;/docsy-example-cn/docs/deployment/#serving-your-site-locally&#34;&gt;本地测试&lt;/a&gt; 使用 Hugo 的本地服务器功能，您需要首先通过运行构建您的 &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; 文件 &lt;code&gt;雨果&lt;/code&gt;。 如果你在构建 &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; 时运行 Hugo 服务器，你可能需要停止服务器并重新启动它才能看到你的搜索结果。
 
 &lt;/div&gt;
 
@@ -901,10 +901,10 @@ offlineSearchMaxResults = 25
     
     <item>
       <title>Docs: 文档版本控制</title>
-      <link>/docs/adding-content/versioning/</link>
+      <link>/docsy-example-cn/docs/adding-content/versioning/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/versioning/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/versioning/</guid>
       <description>
         
         
@@ -927,12 +927,12 @@ offlineSearchMaxResults = 25
 &lt;p&gt;版本下拉菜单的默认标题是 &lt;strong&gt;Releases&lt;/strong&gt;。 要更改标题，更改&lt;code&gt;config.toml&lt;/code&gt;中的&lt;code&gt;version_menu&lt;/code&gt;参数：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version_menu = &amp;quot;Releases&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can read more about Docsy menus in the guide to
-&lt;a href=&#34;/docs/adding-content/navigation/&#34;&gt;navigation and search&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/docsy-example-cn/docs/adding-content/navigation/&#34;&gt;navigation and search&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;在存档的文档站点上显示横幅&#34;&gt;在存档的文档站点上显示横幅&lt;/h2&gt;
 &lt;p&gt;如果您为旧版本的文档创建存档快照，您可以在存档文档的每一页顶部添加注释，让读者知道他们看到的是未维护的快照，并为他们提供指向最新版本的链接。&lt;/p&gt;
 &lt;p&gt;例如，请参阅 &lt;a href=&#34;https://v0-6.kubeflow.org/docs/&#34;&gt;Kubeflow v0.6&lt;/a&gt; 的存档文档：&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;/images/version-banner.png&#34;
+  &lt;img src=&#34;/docsy-example-cn/images/version-banner.png&#34;
        alt=&#34;A text box explaining that this is an unmaintained snapshot of the docs.&#34;
        class=&#34;mt-3 mb-3 border border-info rounded&#34; /&gt;
   &lt;figcaption&gt;Figure 1. The banner on the archived docs for Kubeflow v0.6
@@ -961,10 +961,10 @@ offlineSearchMaxResults = 25
     
     <item>
       <title>Docs: Logos 与图片</title>
-      <link>/docs/adding-content/iconsimages/</link>
+      <link>/docsy-example-cn/docs/adding-content/iconsimages/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/iconsimages/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/iconsimages/</guid>
       <description>
         
         
@@ -995,7 +995,7 @@ offlineSearchMaxResults = 25
 &lt;p&gt;如果您有特殊的网站图标要求，您可以使用您的链接创建自己的 &lt;code&gt;layouts/partials/favicons.html&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;添加图片&#34;&gt;添加图片&lt;/h2&gt;
 &lt;h3 id=&#34;登陆页面&#34;&gt;登陆页面&lt;/h3&gt;
-&lt;p&gt;Docsy 的 &lt;a href=&#34;/docs/adding-content/shortcodes/#blocks-cover&#34;&gt;&lt;code&gt;blocks/cover&lt;/code&gt; 简码&lt;/a&gt; 可以轻松地将大型封面图片添加到您的着陆页。 短代码在着陆页的 &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundle&lt;/a&gt; 中查找名称中带有“背景”一词的图像 - 例如，如果您 已经复制了示例站点，&lt;code&gt;content/en/_index.html&lt;/code&gt; 中的着陆页图片是&lt;code&gt;content/en/featured-background.jpg&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Docsy 的 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#blocks-cover&#34;&gt;&lt;code&gt;blocks/cover&lt;/code&gt; 简码&lt;/a&gt; 可以轻松地将大型封面图片添加到您的着陆页。 短代码在着陆页的 &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundle&lt;/a&gt; 中查找名称中带有“背景”一词的图像 - 例如，如果您 已经复制了示例站点，&lt;code&gt;content/en/_index.html&lt;/code&gt; 中的着陆页图片是&lt;code&gt;content/en/featured-background.jpg&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;您可以使用块的 &lt;code&gt;height&lt;/code&gt; 参数指定封面块容器（及其图像）的首选显示高度。 要获得完整的视口高度，请使用“full”：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;blocks&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;cover&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Welcome to the Docsy Example Project!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;image_anchor&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;full&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;orange&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;}}
 ...
@@ -1005,7 +1005,7 @@ offlineSearchMaxResults = 25
 ...
 {{&lt;span style=&#34;color:#a40000&#34;&gt;&amp;lt;&lt;/span&gt; /blocks/cover &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;其他页面&#34;&gt;其他页面&lt;/h3&gt;
-&lt;p&gt;要将内嵌图像添加到其他页面，请使用 &lt;a href=&#34;/docs/adding-content/shortcodes/#imgproc&#34;&gt;&lt;code&gt;imgproc&lt;/code&gt; 简码&lt;/a&gt;。 或者，如果您愿意，只需使用常规 Markdown 或 HTML 图像并将您的图像文件添加到项目的“静态”目录中。 您可以在 &lt;a href=&#34;/docs/adding-content/content/#adding-static-content&#34;&gt;添加静态内容&lt;/a&gt; 中找到有关使用此目录的更多信息。&lt;/p&gt;
+&lt;p&gt;要将内嵌图像添加到其他页面，请使用 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/shortcodes/#imgproc&#34;&gt;&lt;code&gt;imgproc&lt;/code&gt; 简码&lt;/a&gt;。 或者，如果您愿意，只需使用常规 Markdown 或 HTML 图像并将您的图像文件添加到项目的“静态”目录中。 您可以在 &lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#adding-static-content&#34;&gt;添加静态内容&lt;/a&gt; 中找到有关使用此目录的更多信息。&lt;/p&gt;
 &lt;h2 id=&#34;本网站使用的图片&#34;&gt;本网站使用的图片&lt;/h2&gt;
 &lt;p&gt;本站用作背景图片的图片属于&lt;a href=&#34;https://commons.wikimedia.org/wiki/User:Bep/gallery#Wed_Aug_01_16:16:51_CEST_2018&#34;&gt;公共领域&lt;/a&gt;，可以自由使用。 示例站点中的粥图片是来自&lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=531209&#34;&gt; Pixabay &lt;/a&gt; 的 &lt;a href=&#34;https://pixabay.com/users/iha31-560629/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=531209&#34;&gt;iha31&lt;/a&gt;&lt;/p&gt;
 
@@ -1014,10 +1014,10 @@ offlineSearchMaxResults = 25
     
     <item>
       <title>Docs: 打印支持</title>
-      <link>/docs/adding-content/print/</link>
+      <link>/docsy-example-cn/docs/adding-content/print/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/print/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/print/</guid>
       <description>
         
         
@@ -1042,10 +1042,10 @@ offlineSearchMaxResults = 25
     
     <item>
       <title>Docs: 分析、用户反馈、SEO</title>
-      <link>/docs/adding-content/feedback/</link>
+      <link>/docsy-example-cn/docs/adding-content/feedback/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/feedback/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/feedback/</guid>
       <description>
         
         
@@ -1077,14 +1077,14 @@ offlineSearchMaxResults = 25
 &lt;h2 id=&#34;用户反馈&#34;&gt;用户反馈&lt;/h2&gt;
 &lt;p&gt;默认情况下，Docsy 会显示“此页面有帮助吗？” 每个底部的反馈小部件文档页面，如图1所示。&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;/images/feedback.png&#34;
+  &lt;img src=&#34;/docsy-example-cn/images/feedback.png&#34;
        alt=&#34;The user is presented with the text &#39;Was this page helpful?&#39; followed
             by &#39;Yes&#39; and &#39;No&#39; buttons.&#34;/&gt;
   &lt;figcaption&gt;Figure 1. The feedback widget, outlined in red&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;单击 &lt;strong&gt;Yes&lt;/strong&gt; 后，用户应该会看到如图 2 所示的响应。您可以配置&lt;code&gt;config.toml&lt;/code&gt; 中的响应文本。&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;/images/yes.png&#34;
+  &lt;img src=&#34;/docsy-example-cn/images/yes.png&#34;
        alt=&#34;After clicking &#39;Yes&#39; the widget responds with &#39;Glad to hear it!
             Please tell us how we can improve.&#39; and the second sentence is a link which,
             when clicked, opens GitHub and lets the user create an issue on the
@@ -1155,7 +1155,7 @@ enable = false
   {{ $desc := (.Page.Content | safeHTML | truncate 150) }}
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;{{ $desc }}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
 {{ end }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;.Page.Description&lt;/code&gt; 是来自 &lt;code&gt;description&lt;/code&gt; &lt;a href=&#34;/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter field&lt;/a&gt; 的文本。 如果页面的前端没有“描述”，则使用页面内容的前 150 个字符代替。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;.Page.Description&lt;/code&gt; 是来自 &lt;code&gt;description&lt;/code&gt; &lt;a href=&#34;/docsy-example-cn/docsy-example-cn/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter field&lt;/a&gt; 的文本。 如果页面的前端没有“描述”，则使用页面内容的前 150 个字符代替。&lt;/p&gt;
 &lt;p&gt;例如，如果您的前言 &lt;code&gt;description&lt;/code&gt; 是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
 description: &amp;gt;
@@ -1163,17 +1163,17 @@ description: &amp;gt;
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;那么渲染页面上的元&lt;code&gt;description&lt;/code&gt;标签是：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Add Google Analytics tracking to your site.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;您可以将其他元标记添加到您自己的 &lt;code&gt;head-end.html&lt;/code&gt; 部分副本中。 有关详细信息，请参阅 &lt;a href=&#34;/docs/adding-content/lookandfeel/#customizing-templates&#34;&gt;自定义模板&lt;/a&gt;。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;您可以将其他元标记添加到您自己的 &lt;code&gt;head-end.html&lt;/code&gt; 部分副本中。 有关详细信息，请参阅 &lt;a href=&#34;/docsy-example-cn/docsy-example-cn/docs/adding-content/lookandfeel/#customizing-templates&#34;&gt;自定义模板&lt;/a&gt;。&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Hugo 内容提示</title>
-      <link>/docs/best-practices/site-guidance/</link>
+      <link>/docsy-example-cn/docs/best-practices/site-guidance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/best-practices/site-guidance/</guid>
+      <guid>/docsy-example-cn/docs/best-practices/site-guidance/</guid>
       <description>
         
         
@@ -1189,7 +1189,7 @@ description: &amp;gt;
 正确呈现一些嵌套列表，而 Blackfriday 可能无法很好地呈现相同的内容。例如，在一个计数
 编号列表可能会重新启动，或者列表中的嵌套内容未缩进
 （显示为对等元素而不是嵌套的子元素）。你可能想在你的贡献指南中推荐
-（&lt;a href=&#34;/docs/contribution-guidelines/#contributing-to-se-docs&#34;&gt;正如我们所做的&lt;/a&gt;），贡献者可以使用 Hugo 预览他们的内容
+（&lt;a href=&#34;/docsy-example-cn/docs/contribution-guidelines/#contributing-to-se-docs&#34;&gt;正如我们所做的&lt;/a&gt;），贡献者可以使用 Hugo 预览他们的内容
 （或者使用 Netlify 的 PR 预览功能，如果这是您选择的部署工具）以确保其内容正确呈现
 与黑色星期五。&lt;/p&gt;
 
@@ -1206,22 +1206,22 @@ description: &amp;gt;
 &lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
 &lt;p&gt;默认情况下，链接中的常规相对 URL 由 Hugo 保持不变（它们仍然是您网站生成的 HTML 中的相对链接），因此一些硬编码的相对链接，如 &lt;code&gt;[relative cross-link](../../peer-folder /sub-file.md)&lt;/code&gt; 的行为与它们在本地文件系统上的工作方式相比可能会出乎意料。您可能会发现使用 Hugo 的一些内置 &lt;a href=&#34;https://gohugo.io/content-management/cross-references/#use-ref-and-relref&#34;&gt;链接短代码&lt;/a&gt; 来避免生成的链接中的断开链接很有帮助地点。例如 Hugo 中的 &lt;code&gt;{{&amp;lt; ref &amp;quot;filename.md&amp;quot; &amp;gt;}}&lt;/code&gt; 链接实际上将
 查找并自动链接到名为“filename.md”的文件。&lt;/p&gt;
-&lt;p&gt;但是请注意，&lt;code&gt;ref&lt;/code&gt; 和&lt;code&gt;relref&lt;/code&gt; 链接不适用于&lt;code&gt;_index&lt;/code&gt; 或&lt;code&gt;index&lt;/code&gt; 文件（例如，此站点的&lt;a href=&#34;/docs/adding-content/&#34;&gt;内容登陆页面&lt;/a&gt;）：您需要使用常规的 Markdown 链接到部分着陆页或其他索引页。指定这些相对于站点根 URL 的链接，例如：&lt;code&gt;/docs/adding-content/&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#working-with-links&#34;&gt;了解有关链接的更多信息&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;但是请注意，&lt;code&gt;ref&lt;/code&gt; 和&lt;code&gt;relref&lt;/code&gt; 链接不适用于&lt;code&gt;_index&lt;/code&gt; 或&lt;code&gt;index&lt;/code&gt; 文件（例如，此站点的&lt;a href=&#34;/docsy-example-cn/docs/adding-content/&#34;&gt;内容登陆页面&lt;/a&gt;）：您需要使用常规的 Markdown 链接到部分着陆页或其他索引页。指定这些相对于站点根 URL 的链接，例如：&lt;code&gt;/docs/adding-content/&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#working-with-links&#34;&gt;了解有关链接的更多信息&lt;/a&gt;。&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: 存储库链接</title>
-      <link>/docs/adding-content/repository-links/</link>
+      <link>/docsy-example-cn/docs/adding-content/repository-links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/repository-links/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/repository-links/</guid>
       <description>
         
         
-        &lt;p&gt;Docsy &lt;a href=&#34;/docs/adding-content/content/#adding-docs-and-blog-posts&#34;&gt;文档和博客布局&lt;/a&gt; 包含供读者编辑页面或通过您网站的源存储库为您的文档或项目创建问题的链接.当前为每个文档或博客页面生成的链接是：&lt;/p&gt;
+        &lt;p&gt;Docsy &lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#adding-docs-and-blog-posts&#34;&gt;文档和博客布局&lt;/a&gt; 包含供读者编辑页面或通过您网站的源存储库为您的文档或项目创建问题的链接.当前为每个文档或博客页面生成的链接是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;编辑此页面&lt;/strong&gt;：将用户带到他们的文档存储库的分支（如果可用）中的页面内容的可编辑版本。如果用户没有您的文档存储库的当前分支，则邀请他们在进行编辑之前创建一个分支。然后，用户可以为您的文档创建拉取请求。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;创建子页面&lt;/strong&gt;：将用户带到他们的文档存储库分支中的创建新文件表单。新文件将作为他们单击链接的页面的子文件定位。该表单将预先填充一个模板，用户可以编辑该模板以创建他们的页面。您可以通过将 &lt;code&gt;assets/stubs/new-page-template.md&lt;/code&gt; 添加到您自己的项目来更改此设置。&lt;/li&gt;
@@ -1229,7 +1229,7 @@ description: &amp;gt;
 &lt;li&gt;&lt;strong&gt;创建项目问题&lt;/strong&gt;（可选）：将用户带到项目存储库中的新问题表单。如果您有单独的项目和文档存储库，并且您的用户想要针对正在讨论的项目功能而不是您的文档提交问题，这会很有用。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;此页面向您展示如何使用您的 &lt;code&gt;config.toml&lt;/code&gt; 文件配置这些链接。&lt;/p&gt;
-&lt;p&gt;目前 Docsy 仅支持“开箱即用”的 GitHub 存储库链接。如果您正在使用其他存储库（例如 Bitbucket）并希望生成存储库链接，请随时&lt;a href=&#34;/docs/contribution-guidelines/&#34;&gt;添加功能请求或更新我们的主题&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;目前 Docsy 仅支持“开箱即用”的 GitHub 存储库链接。如果您正在使用其他存储库（例如 Bitbucket）并希望生成存储库链接，请随时&lt;a href=&#34;/docsy-example-cn/docs/contribution-guidelines/&#34;&gt;添加功能请求或更新我们的主题&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;链接配置&#34;&gt;链接配置&lt;/h2&gt;
 &lt;p&gt;您可以在 &lt;code&gt;config.toml&lt;/code&gt; 中配置四个变量来设置链接，还有一个在页面元数据中。&lt;/p&gt;
 &lt;h3 id=&#34;github_repo&#34;&gt;&lt;code&gt;github_repo&lt;/code&gt;&lt;/h3&gt;
@@ -1261,10 +1261,10 @@ description: &amp;gt;
     
     <item>
       <title>Docs: 组织您的内容</title>
-      <link>/docs/best-practices/organizing-content/</link>
+      <link>/docsy-example-cn/docs/best-practices/organizing-content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/best-practices/organizing-content/</guid>
+      <guid>/docsy-example-cn/docs/best-practices/organizing-content/</guid>
       <description>
         
         
@@ -1288,11 +1288,11 @@ description: &amp;gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    如果您想复制本指南，请注意其 &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;源文件&lt;/a&gt; 位于 Docsy 主题存储库中，因此它不会有自己的&lt;code&gt;themes/&lt;/code&gt; 目录：相反，我们运行&lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; 以从其父目录使用Docsy。您可能想要复制站点并&lt;a href=&#34;/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;使用 Docsy 添加&lt;code&gt;themes/&lt;/code&gt; 目录&lt;/a&gt;，或者只是将 &lt;code&gt;docs/&lt;/code&gt; 文件夹复制到您现有站点的内容根目录中。
+    如果您想复制本指南，请注意其 &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;源文件&lt;/a&gt; 位于 Docsy 主题存储库中，因此它不会有自己的&lt;code&gt;themes/&lt;/code&gt; 目录：相反，我们运行&lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; 以从其父目录使用Docsy。您可能想要复制站点并&lt;a href=&#34;/docsy-example-cn/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;使用 Docsy 添加&lt;code&gt;themes/&lt;/code&gt; 目录&lt;/a&gt;，或者只是将 &lt;code&gt;docs/&lt;/code&gt; 文件夹复制到您现有站点的内容根目录中。
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#organizing-your-documentation&#34;&gt;详细了解 Hugo 和 Docsy 如何使用文件夹和其他文件来组织您的网站&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docsy-example-cn/docs/adding-content/content/#organizing-your-documentation&#34;&gt;详细了解 Hugo 和 Docsy 如何使用文件夹和其他文件来组织您的网站&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;为什么是这个结构&#34;&gt;为什么是这个结构？&lt;/h2&gt;
 &lt;p&gt;我们基于我们自己创建（和使用）大型文档集的经验来构建示例站点结构
 不同类型的项目和在我们一些较大网站上进行的用户研究。在用户研究中，我们看到
@@ -1314,10 +1314,10 @@ description: &amp;gt;
     
     <item>
       <title>Docs: 分类支持</title>
-      <link>/docs/adding-content/taxonomy/</link>
+      <link>/docsy-example-cn/docs/adding-content/taxonomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/adding-content/taxonomy/</guid>
+      <guid>/docsy-example-cn/docs/adding-content/taxonomy/</guid>
       <description>
         
         
