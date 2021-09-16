@@ -1,0 +1,114 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docsy中文网 – 最佳实践</title>
+    <link>/docs/best-practices/</link>
+    <description>Recent content in 最佳实践 on Docsy中文网</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Hugo 内容提示</title>
+      <link>/docs/best-practices/site-guidance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/best-practices/site-guidance/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docsy 是 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 静态站点的主题
+发电机。如果你还不熟悉 Hugo，特别是它的 Markdown 版本，这个页面提供了一些
+为您的网站添加和编辑内容的有用提示和潜在问题。随意添加你自己的！&lt;/p&gt;
+&lt;h2 id=&#34;嵌套列表&#34;&gt;嵌套列表&lt;/h2&gt;
+&lt;p&gt;Hugo 目前使用的是 &lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;Blackfriday&lt;/a&gt; Markdown 处理器，可以
+当涉及到深度嵌套在列表中的内容时很敏感。特别要注意的是
+&lt;a href=&#34;https://github.com/russross/blackfriday/issues/329&#34;&gt;这个已知问题&lt;/a&gt; 如果或当您有多个作者并且
+其他可能在缩进列表时混用“制表符”和“空格”或无法正确缩进的贡献者。&lt;/p&gt;
+&lt;p&gt;这里的另一个因素是，由于 GitHub 使用不同的 Markdown 处理器，GitHub Markdown 和编辑器 UI 可能
+正确呈现一些嵌套列表，而 Blackfriday 可能无法很好地呈现相同的内容。例如，在一个计数
+编号列表可能会重新启动，或者列表中的嵌套内容未缩进
+（显示为对等元素而不是嵌套的子元素）。你可能想在你的贡献指南中推荐
+（&lt;a href=&#34;/docs/contribution-guidelines/#contributing-to-se-docs&#34;&gt;正如我们所做的&lt;/a&gt;），贡献者可以使用 Hugo 预览他们的内容
+（或者使用 Netlify 的 PR 预览功能，如果这是您选择的部署工具）以确保其内容正确呈现
+与黑色星期五。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    &lt;a href=&#34;https://github.com/russross/blackfriday/issues/329#issuecomment-277602856&#34;&gt;对已知问题的评论&lt;/a&gt;，一些
+用户发现使用 4 个空格而不是“制表符”会产生一致的行为。例如，考虑
+配置您的本地编辑器以在按下 &lt;strong&gt;Tab&lt;/strong&gt; 键时使用 4 个空格。
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
+&lt;p&gt;默认情况下，链接中的常规相对 URL 由 Hugo 保持不变（它们仍然是您网站生成的 HTML 中的相对链接），因此一些硬编码的相对链接，如 &lt;code&gt;[relative cross-link](../../peer-folder /sub-file.md)&lt;/code&gt; 的行为与它们在本地文件系统上的工作方式相比可能会出乎意料。您可能会发现使用 Hugo 的一些内置 &lt;a href=&#34;https://gohugo.io/content-management/cross-references/#use-ref-and-relref&#34;&gt;链接短代码&lt;/a&gt; 来避免生成的链接中的断开链接很有帮助地点。例如 Hugo 中的 &lt;code&gt;{{&amp;lt; ref &amp;quot;filename.md&amp;quot; &amp;gt;}}&lt;/code&gt; 链接实际上将
+查找并自动链接到名为“filename.md”的文件。&lt;/p&gt;
+&lt;p&gt;但是请注意，&lt;code&gt;ref&lt;/code&gt; 和&lt;code&gt;relref&lt;/code&gt; 链接不适用于&lt;code&gt;_index&lt;/code&gt; 或&lt;code&gt;index&lt;/code&gt; 文件（例如，此站点的&lt;a href=&#34;/docs/adding-content/&#34;&gt;内容登陆页面&lt;/a&gt;）：您需要使用常规的 Markdown 链接到部分着陆页或其他索引页。指定这些相对于站点根 URL 的链接，例如：&lt;code&gt;/docs/adding-content/&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#working-with-links&#34;&gt;了解有关链接的更多信息&lt;/a&gt;。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 组织您的内容</title>
+      <link>/docs/best-practices/organizing-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/best-practices/organizing-content/</guid>
+      <description>
+        
+        
+        &lt;p&gt;如果您查看我们的 &lt;a href=&#34;https://example.docsy.dev/about/&#34;&gt;示例站点&lt;/a&gt;，您会发现我们已经组织了
+文档部分分为许多小节，每个小节都有一些关于您可能会放置的内容的建议
+在那个部分。&lt;/p&gt;
+&lt;h2 id=&#34;我需要使用这个结构吗&#34;&gt;我需要使用这个结构吗？&lt;/h2&gt;
+&lt;p&gt;绝对不！示例站点中的站点结构是为了满足大型文档集的需求而创建的具有许多功能、潜在任务和参考元素的产品。对于更简单的文档集（就像这个！），围绕用户需要了解的特定功能构建文档是很好的。即使对于更大的
+文档集，您可能会发现该结构“按原样”没有用，或者您不需要使用所有节类型。&lt;/p&gt;
+&lt;p&gt;我们确实建议（正如我们在此处所做的那样）您至少提供：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;产品的&lt;strong&gt;概述&lt;/strong&gt;（在文档登录页面或单独的概述页面上），告诉用户
+为什么他们应该对您的项目感兴趣。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;入门&lt;/strong&gt;页面。&lt;/li&gt;
+&lt;li&gt;一些例子**。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;您可能还想为项目的功能创建一些任务/操作方法。请随意复制此 Docsy 用户指南
+如果您更喜欢这种更简单的结构，请访问站点甚至只是文档部分。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    如果您想复制本指南，请注意其 &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;源文件&lt;/a&gt; 位于 Docsy 主题存储库中，因此它不会有自己的&lt;code&gt;themes/&lt;/code&gt; 目录：相反，我们运行&lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; 以从其父目录使用Docsy。您可能想要复制站点并&lt;a href=&#34;/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;使用 Docsy 添加&lt;code&gt;themes/&lt;/code&gt; 目录&lt;/a&gt;，或者只是将 &lt;code&gt;docs/&lt;/code&gt; 文件夹复制到您现有站点的内容根目录中。
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;/docs/adding-content/content/#organizing-your-documentation&#34;&gt;详细了解 Hugo 和 Docsy 如何使用文件夹和其他文件来组织您的网站&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;为什么是这个结构&#34;&gt;为什么是这个结构？&lt;/h2&gt;
+&lt;p&gt;我们基于我们自己创建（和使用）大型文档集的经验来构建示例站点结构
+不同类型的项目和在我们一些较大网站上进行的用户研究。在用户研究中，我们看到
+用户最关心并立即查找“入门”或“入门”部分
+（所以他们可以，好吧，开始），以及一些探索和复制的例子，所以我们把它们做成了突出的顶级文档
+我们网站中的部分。用户还希望找到他们可以轻松查找以执行特定任务和
+放在一起创建自己的应用程序或项目，因此我们建议您将此类内容添加为任务。
+其他内容类型（例如概念文档、参考文档和端到端教程）对所有文档集都不那么重要，
+特别是对于较小的项目。我们在示例站点中强调这些部分是可选的。&lt;/p&gt;
+&lt;p&gt;随着我们更多地了解用户如何与技术人员互动，我们希望进一步改进示例站点结构
+文档，特别是对于开源项目。&lt;/p&gt;
+&lt;h2 id=&#34;写作风格指南&#34;&gt;写作风格指南&lt;/h2&gt;
+&lt;p&gt;本指南和示例站点仅说明如何将文档内容组织成页面和部分。有关如何组织和编写每个页面中的内容的一些指导，我们推荐
+&lt;a href=&#34;https://developers.google.com/style/&#34;&gt;Google Developer Documentation Style Guide&lt;/a&gt;，特别是
+&lt;a href=&#34;https://developers.google.com/style/highlights&#34;&gt;风格指南亮点&lt;/a&gt;。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

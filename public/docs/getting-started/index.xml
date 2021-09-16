@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docsy中文网 – 入门</title>
+    <link>/docs/getting-started/</link>
+    <description>Recent content in 入门 on Docsy中文网</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 30 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Docker 快速开始</title>
+      <link>/docs/getting-started/quickstart-docker/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/quickstart-docker/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;安装先决条件&#34;&gt;安装先决条件&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在 Mac 和 Windows 上，下载并安装&lt;a href=&#34;https://www.docker.com/get-started&#34;&gt;Docker 桌面&lt;/a&gt;。 在 Linux 上，安装 &lt;a href=&#34;https://docs.docker.com/engine/install/#server&#34;&gt;Docker 引擎&lt;/a&gt; 和 &lt;a href=&#34;https://docs.docker.com/compose/install/&#34;&gt;Docker 撰写&lt;/a&gt;。安装可能需要您重新启动计算机以更改生效。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/git-guides/install-git&#34;&gt;安装 git&lt;/a&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;从-docsy-example-模板创建您的存储库&#34;&gt;从 docsy-example 模板创建您的存储库&lt;/h2&gt;
+&lt;p&gt;docsy-example 存储库提供了您可以使用的基本站点结构作为创建自己的文档的起点。&lt;/p&gt;
+&lt;p&gt;1.使用&lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;docsy-example 模板&lt;/a&gt;
+[创建您自己的存储库]（https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template）。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过&lt;a href=&#34;https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository&#34;&gt;克隆你新创建的存储库&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将您的工作目录更改为新创建的文件夹：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; docsy-example
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;构建并运行容器&#34;&gt;构建并运行容器&lt;/h2&gt;
+&lt;p&gt;docsy-example 存储库包括一个&lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34;&gt;Dockerfile&lt;/a&gt; 你可以用于运行您的网站。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;构建 docker 镜像：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行构建的镜像：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在浏览器中打开地址 &lt;code&gt;http://localhost:1313&lt;/code&gt; 加载 docsy-example 主页。 您现在可以更改源文件，那些更改将实时重新加载到您的浏览器中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;清理&#34;&gt;清理&lt;/h2&gt;
+&lt;p&gt;要清理系统并删除容器映像，请按照以下步骤操作。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;strong&gt;Ctrl + C&lt;/strong&gt; 停止 Docker Compose。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1.删除生成的图像&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose rm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;下一步是什么&#34;&gt;下一步是什么？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;了解 &lt;a href=&#34;/docs/getting-started/&#34;&gt;Docsy 的基本设置和配置&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/adding-content/&#34;&gt;添加内容并自定义您的网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/deployment/&#34;&gt;发布您的网站&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

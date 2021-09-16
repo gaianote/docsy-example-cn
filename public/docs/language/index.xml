@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docsy中文网 – 多语言支持</title>
+    <link>/docs/language/</link>
+    <description>Recent content in 多语言支持 on Docsy中文网</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/language/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
